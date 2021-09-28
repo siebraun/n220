@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sierra's peak pixels</title>
+  </head>
+  <body>
+    <div id="box" class="box"></div>
+
+    <!-- javascript -->
+    <script>
+      //make variable for box
+      let box = document.getElementById("box");
+
+      //style box
+      box.style.backgroundColor = "green";
+      box.style.width = "100px";
+      box.style.height = "100px";
+
+      //create function
+      box.addEventListener("click", function () {
+        let boxWidth = box.offsetWidth;
+        box.style.width = boxWidth * 1.1 + "px";
+        let boxHeight = box.offsetHeight;
+        box.style.height = boxHeight * 1.1 + "px";
+      });
+    </script>
+  </body>
+</html>

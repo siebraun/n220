@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sierra's over and out</title>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <!-- javascript -->
+    <script>
+      let box = document.getElementById("box");
+
+      //style
+      box.style.backgroundColor = "blue";
+      box.style.width = "100px";
+      box.style.height = "100px";
+
+      //change color to black when mouse hovers over
+      box.onmouseover = function () {
+        box.style.backgroundColor = "black";
+      };
+
+      //change back to blue after mouse leaves
+      box.onmouseout = function () {
+        box.style.backgroundColor = "blue";
+      };
+    </script>
+  </body>
+</html>

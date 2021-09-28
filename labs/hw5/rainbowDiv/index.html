@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sierra's rainbow divs</title>
+  </head>
+  <body>
+    <div id="firstDiv"></div>
+
+    <!-- javascript -->
+
+    <script>
+      //create loop
+      for (var i = 0; i < 100; i++) {
+        //variable for first div
+        let firstDiv = document.querySelector("#firstDiv");
+
+        //create and append new divs to first div
+        let divs = document.createElement("div");
+        divs.style.float = "left";
+
+        divs.style.height = "50px";
+        divs.style.width = "50px";
+        divs.style.backgroundColor = randColor();
+        firstDiv.appendChild(divs);
+      }
+
+      //generate random color
+      function randColor() {
+        var r = Math.round(Math.random() * 255);
+        var g = Math.round(Math.random() * 255);
+        var b = Math.round(Math.random() * 255);
+        var colorString = "rgb(" + r + "," + g + "," + b + ")";
+        return colorString;
+      }
+    </script>
+  </body>
+</html>
