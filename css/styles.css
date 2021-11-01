@@ -44,6 +44,8 @@ h2 {
 .projectDiv {
   margin-top: 20px;
   height: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .indexPageOne a {
